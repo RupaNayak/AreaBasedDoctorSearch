@@ -1,0 +1,97 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPageAfterlogin.master.vb" Inherits="MasterPageAfterlogin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="height: 1080px; width: 1600px">
+    <asp:Panel ID="Panel_title" runat="server" 
+            
+            
+            style="z-index: 1; left: 0px; top: 1px; position: absolute; height: 112px; width: 1600px" 
+            BackColor="#006699">
+            <asp:ImageButton ID="ImageButton_title" runat="server" 
+    
+                style="z-index: 1; left: 401px; top: 7px; position: absolute; height: 101px; width: 608px;" 
+                ImageUrl="~/Pictures/Title/Title name0011.png" />
+            
+        </asp:Panel>
+        <asp:Panel ID="Panel1" runat="server" 
+            
+            style="z-index: 1; left: 0px; top: 113px; position: absolute; height: 50px; width: 1600px">
+            <asp:Menu ID="Menu_title" runat="server" BackColor="#660033" 
+                DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" 
+                ForeColor="#7C6F57" Orientation="Horizontal" StaticSubMenuIndent="10px" 
+                Width="1600px">
+                <DynamicHoverStyle BackColor="#0099FF" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicMenuStyle BackColor="#F7F6F3" />
+                <DynamicSelectedStyle BackColor="#5D7B9D" />
+                <Items>
+                    <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home2.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Diseases" Value="Diseases" NavigateUrl="~/Diseases2.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Doctors" Value="Doctors" NavigateUrl="~/Doctors2.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Location" Value="Location" NavigateUrl="~/Location2.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Appointment" Value="Appointment" 
+                        NavigateUrl="~/Appointment2.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Suggestion" Value="Suugestion" 
+                        NavigateUrl="~/Suggestion2.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Appointment Details" Value="Appointment Details Details" 
+                        NavigateUrl="~/AppointmentDetails.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Help?" Value="Help?"></asp:MenuItem>
+                    <asp:MenuItem Text="Contact Us" Value="Contact Us" 
+                        NavigateUrl="~/Contactus2.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="About Us" Value="About Us"></asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#993366" BorderStyle="None" ForeColor="White" 
+                    Font-Bold="True" />
+                <StaticMenuItemStyle Font-Bold="True" Font-Names="Microsoft JhengHei UI" Font-Size="Larger" 
+                    ForeColor="White" HorizontalPadding="20px" VerticalPadding="15px" 
+                    BorderStyle="None" />
+                <StaticMenuStyle HorizontalPadding="30px" />
+                <StaticSelectedStyle BackColor="White" ForeColor="Black" BorderStyle="None" 
+                    Font-Bold="True" />
+            </asp:Menu>
+        </asp:Panel>
+        <asp:Panel ID="Panel2" runat="server" BackColor="#CDCDCD" 
+            
+            style="z-index: 1; left: 0px; top: 166px; position: absolute; height: 1002px; width: 1600px" 
+            BackImageUrl="~/Pictures/Background/Background0003.jpg">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+                <p>
+                    <br />
+                </p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                </p>
+                
+            </asp:ContentPlaceHolder>
+            <br />
+            <br />
+        </asp:Panel>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPageAppointment.master.vb" Inherits="MasterPageAppointment" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="height: 1080px; width: 1600px">
+        <asp:Panel ID="Panel_title" runat="server" BackColor="#006699" 
+            
+            
+            style="z-index: 1; left: 0px; top: 1px; position: absolute; height: 112px; width: 1600px">
+            <asp:ImageButton ID="ImageButton_title" runat="server" 
+                ImageUrl="~/Pictures/Title/Title name0011.png" 
+                style="z-index: 1; left: 401px; top: 7px; position: absolute; height: 101px; width: 608px;" />
+            <asp:Panel ID="Panel_logsing" runat="server" 
+                
+                style="z-index: 1; left: 1239px; top: 58px; position: absolute; height: 48px; width: 266px">
+                <table class="style1">
+                    <tr>
+                        <td class="style2">
+                            <asp:ImageButton ID="ImageButton_login" runat="server" Height="34px" 
+                                ImageUrl="~/Pictures/Logo/Log in 0005.png" Width="127px" />
+                        </td>
+                        <td class="style4">
+                            /</td>
+                        <td class="style3">
+                            <asp:ImageButton ID="ImageButton_signup" runat="server" Height="44px" 
+                                ImageUrl="~/Pictures/Logo/Sign up0001.png" Width="121px" />
+                        </td>
+                    </tr>
+                </table>
+            </asp:Panel>
+        </asp:Panel>
+
+    </div>
+    </form>
+</body>
+</html>
